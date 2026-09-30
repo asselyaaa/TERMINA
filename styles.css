@@ -441,4 +441,64 @@ footer {
     .workflow div {
         grid-template-columns: 55px 1fr;
     }
+}/* SOURCES */
+
+.sources-list {
+    padding: 70px 0 110px;
+}
+
+.source-item {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 30px;
+    padding: 45px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.source-number {
+    font-family: "DM Mono", monospace;
+    color: var(--olive);
+    font-size: 13px;
+}
+
+.source-item h2 {
+    margin: 0 0 15px;
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.source-item p {
+    max-width: 700px;
+    color: var(--muted);
+}
+
+.source-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid var(--text);
+    padding-bottom: 3px;
+}
+
+.source-item a:hover {
+    color: var(--olive);
+    border-color: var(--olive);
+}
+
+.source-note {
+    font-style: italic;
+}
+
+@media (max-width: 700px) {
+
+    .source-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .source-item h2 {
+        font-size: 27px;
+    }
 }
