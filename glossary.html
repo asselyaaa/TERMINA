@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,65 +34,108 @@
 
 <main>
 
-<section class="page-header container">
+    <section class="page-header container">
 
-    <p class="eyebrow">
-        TERMINOLOGY
-    </p>
+        <p class="eyebrow">
+            TERMINOLOGY
+        </p>
 
-    <h1>
-        IT Glossary
-    </h1>
+        <h1>
+            IT Glossary
+        </h1>
 
-    <p>
-        Explore Information Technology terminology
-        in English, Kazakh and Russian.
-    </p>
+        <p>
+            Explore Information Technology terminology
+            in English, Kazakh and Russian.
+        </p>
 
-</section>
+    </section>
 
 
-<section class="glossary-section container">
+    <section class="glossary-section container">
 
-    <div class="search-area">
+        <div class="search-area">
 
-        <input
-            type="text"
-            id="searchInput"
-            placeholder="Search a term..."
-        >
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search a term..."
+            >
 
+        </div>
+
+
+        <div class="categories" id="categories">
+
+            <button class="category active" data-category="All">
+                All
+            </button>
+
+            <button class="category" data-category="AI">
+                AI
+            </button>
+
+            <button class="category" data-category="Programming">
+                Programming
+            </button>
+
+            <button class="category" data-category="Data">
+                Data
+            </button>
+
+            <button class="category" data-category="Cloud">
+                Cloud
+            </button>
+
+            <button class="category" data-category="Networking">
+                Networking
+            </button>
+
+            <button class="category" data-category="Security">
+                Security
+            </button>
+
+            <button class="category" data-category="Systems">
+                Systems
+            </button>
+
+            <button class="category" data-category="Development">
+                Development
+            </button>
+
+            <button class="category" data-category="Emerging Tech">
+                Emerging Tech
+            </button>
+
+        </div>
+
+
+        <!-- TERM CARDS WILL APPEAR HERE -->
+
+        <div
+            id="glossaryGrid"
+            class="glossary-grid">
+        </div>
+
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+        TERMINA · Trilingual IT Glossary
     </div>
 
+</footer>
 
-    <div class="categories" id="categories">
 
-        <button class="category active" data-category="All">
-            All
-        </button>
+<!-- JavaScript -->
 
-        <button class="category" data-category="AI">
-            AI
-        </button>
+<script src="app.js"></script>
 
-        <button class="category" data-category="Programming">
-            Programming
-        </button>
+</body>
 
-        <button class="category" data-category="Data">
-            Data
-        </button>
-
-        <button class="category" data-category="Cloud">
-            Cloud
-        </button>
-
-        <button class="category" data-category="Networking">
-            Networking
-        </button>
-
-        <button class="category" data-category="Security">
-            Security
-        </button>
-
-        <button class="category"
+</html>
