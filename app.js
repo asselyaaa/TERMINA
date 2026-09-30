@@ -586,10 +586,11 @@ function displayTerms(list) {
         return;
     }
 
-    list.forEach(item => {
+    list.forEach((item, index) => { => {
         const card = document.createElement("article");
 
         card.className = "term-card";
+        card.style.animationDelay = `${index * 0.035}s`;
 
         card.innerHTML = `
             <div class="term-category">${item.category}</div>
@@ -667,7 +668,41 @@ categoryButtons.forEach(button => {
         button.classList.add("active");
 
         filterTerms();
+    });/* =========================
+   CURSOR GLOW
+========================= */
+
+const cursorGlow = document.createElement("div");
+
+cursorGlow.className = "cursor-glow";
+
+document.body.appendChild(cursorGlow);
+
+document.addEventListener("mousemove", (event) => {
+
+    cursorGlow.style.left = event.clientX + "px";
+    cursorGlow.style.top = event.clientY + "px";
+
+});
+
+
+/* =========================
+   CARD STAGGER ANIMATION
+========================= */
+
+function animateCards() {
+
+    const cards = document.querySelectorAll(".term-card");
+
+    cards.forEach((card, index) => {
+
+        card.style.animationDelay = `${index * 0.035}s`;
+
     });
+
+}
+
+animateCards();
 
 });
 
