@@ -380,4 +380,65 @@ footer {
     .term-card {
         padding: 22px;
     }
+}/* ABOUT */
+
+.about-content {
+    padding: 80px 0;
+}
+
+.about-block {
+    max-width: 850px;
+    padding: 55px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.about-block h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    line-height: 1.15;
+    font-weight: 500;
+    margin: 15px 0 25px;
+}
+
+.about-block p:not(.eyebrow) {
+    max-width: 700px;
+    color: var(--muted);
+    font-size: 16px;
+}
+
+.project-method {
+    padding: 60px 0 100px;
+}
+
+.workflow {
+    margin-top: 25px;
+    border-top: 1px solid var(--border);
+}
+
+.workflow div {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 20px;
+    padding: 25px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.workflow strong {
+    font-family: "DM Mono", monospace;
+    color: var(--olive);
+}
+
+.workflow span {
+    font-size: 16px;
+}
+
+@media (max-width: 700px) {
+
+    .about-block h2 {
+        font-size: 32px;
+    }
+
+    .workflow div {
+        grid-template-columns: 55px 1fr;
+    }
 }
