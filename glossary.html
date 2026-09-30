@@ -2,27 +2,37 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Glossary — TERMINA</title>
 
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
 
+<div class="page-noise"></div>
+
 <header class="header">
 
-    <div class="container nav">
+    <div class="nav container">
 
         <a href="index.html" class="logo">
-            TERMINA
+            TERMINA<span>.</span>
         </a>
+
+        <div class="nav-center">
+            <span>AI-ASSISTED</span>
+            <span>TRILINGUAL</span>
+            <span>IT / 2026</span>
+        </div>
 
         <nav>
             <a href="index.html">Home</a>
-            <a href="glossary.html">Glossary</a>
+            <a href="glossary.html" class="active">Glossary</a>
             <a href="about.html">About</a>
             <a href="sources.html">Sources</a>
         </nav>
@@ -34,89 +44,162 @@
 
 <main>
 
-    <section class="page-header container">
+    <!-- GLOSSARY HERO -->
 
-        <p class="eyebrow">
-            TERMINOLOGY
-        </p>
+    <section class="glossary-hero container">
+
+        <div class="glossary-hero-top">
+
+            <span>03 / 04</span>
+
+            <span>
+                TERMINOLOGY DATABASE
+            </span>
+
+        </div>
 
         <h1>
-            IT Glossary
+            THE LANGUAGE
+            <em>OF TECHNOLOGY</em>
         </h1>
 
-        <p>
-            Explore Information Technology terminology
-            in English, Kazakh and Russian.
-        </p>
+        <div class="glossary-intro-row">
+
+            <p>
+                Explore IT terminology across
+                English, Kazakh and Russian.
+            </p>
+
+            <span class="giant-arrow">
+                ↓
+            </span>
+
+        </div>
 
     </section>
 
 
-    <section class="glossary-section container">
+    <!-- SEARCH -->
 
-        <div class="search-area">
+    <section class="search-section container">
+
+        <div class="search-label">
+            SEARCH THE VOCABULARY
+        </div>
+
+        <div class="search-box">
+
+            <span class="search-icon">
+                /
+            </span>
 
             <input
                 type="text"
                 id="searchInput"
-                placeholder="Search a term..."
+                placeholder="Type a term, translation or concept..."
             >
+
+            <span class="search-key">
+                SEARCH
+            </span>
 
         </div>
 
 
         <div class="categories" id="categories">
 
-            <button class="category active" data-category="All">
-                All
+            <button
+                class="category active"
+                data-category="All">
+                ALL
             </button>
 
-            <button class="category" data-category="AI">
+            <button
+                class="category"
+                data-category="AI">
                 AI
             </button>
 
-            <button class="category" data-category="Programming">
-                Programming
+            <button
+                class="category"
+                data-category="Programming">
+                PROGRAMMING
             </button>
 
-            <button class="category" data-category="Data">
-                Data
+            <button
+                class="category"
+                data-category="Data">
+                DATA
             </button>
 
-            <button class="category" data-category="Cloud">
-                Cloud
+            <button
+                class="category"
+                data-category="Cloud">
+                CLOUD
             </button>
 
-            <button class="category" data-category="Networking">
-                Networking
+            <button
+                class="category"
+                data-category="Networking">
+                NETWORKING
             </button>
 
-            <button class="category" data-category="Security">
-                Security
+            <button
+                class="category"
+                data-category="Security">
+                SECURITY
             </button>
 
-            <button class="category" data-category="Systems">
-                Systems
+            <button
+                class="category"
+                data-category="Systems">
+                SYSTEMS
             </button>
 
-            <button class="category" data-category="Development">
-                Development
+            <button
+                class="category"
+                data-category="Development">
+                DEVELOPMENT
             </button>
 
-            <button class="category" data-category="Emerging Tech">
-                Emerging Tech
+            <button
+                class="category"
+                data-category="Emerging Tech">
+                EMERGING TECH
             </button>
 
         </div>
 
+    </section>
 
-        <!-- TERM CARDS WILL APPEAR HERE -->
+
+    <!-- TERMS -->
+
+    <section class="terms-section container">
+
+        <div class="terms-heading">
+
+            <div>
+                <span class="eyebrow">
+                    VOCABULARY / INDEX
+                </span>
+
+                <h2>
+                    EXPLORE
+                </h2>
+            </div>
+
+            <span class="terms-mark">
+                EN / ҚАЗ / RU
+            </span>
+
+        </div>
+
 
         <div
             id="glossaryGrid"
             class="glossary-grid">
         </div>
-
 
     </section>
 
@@ -125,14 +208,22 @@
 
 <footer>
 
-    <div class="container">
-        TERMINA · Trilingual IT Glossary
+    <div class="container footer-inner">
+
+        <span>TERMINA.</span>
+
+        <span>
+            Trilingual IT Glossary
+        </span>
+
+        <span>
+            EN · ҚАЗ · RU
+        </span>
+
     </div>
 
 </footer>
 
-
-<!-- JavaScript -->
 
 <script src="app.js"></script>
 
