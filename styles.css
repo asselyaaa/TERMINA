@@ -212,4 +212,172 @@ footer {
     .stat:last-child {
         border-bottom: none;
     }
+}/* GLOSSARY */
+
+.page-header {
+    padding: 90px 0 60px;
+    border-bottom: 1px solid var(--border);
+}
+
+.page-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 72px;
+    font-weight: 500;
+    margin: 15px 0;
+    line-height: 1;
+}
+
+.page-header p:last-child {
+    color: var(--muted);
+    max-width: 600px;
+}
+
+.glossary-section {
+    padding: 50px 0 100px;
+}
+
+.search-area {
+    margin-bottom: 25px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 18px 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+#searchInput:focus {
+    border-color: var(--olive);
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 45px;
+}
+
+.category {
+    padding: 9px 15px;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+}
+
+.category:hover,
+.category.active {
+    background: var(--text);
+    color: var(--surface);
+    border-color: var(--text);
+}
+
+.glossary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.term-card {
+    padding: 30px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+}
+
+.term-category {
+    font-family: "DM Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: var(--olive);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.term-card h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 25px;
+}
+
+.translations {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+    display: grid;
+    gap: 12px;
+}
+
+.translations div {
+    display: flex;
+    gap: 15px;
+}
+
+.translations span,
+.definition > span,
+.example > span {
+    min-width: 35px;
+    font-family: "DM Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--olive);
+}
+
+.translations strong {
+    font-weight: 500;
+}
+
+.definition,
+.example {
+    margin-top: 22px;
+}
+
+.definition p,
+.example p {
+    color: var(--muted);
+    margin: 8px 0 0;
+    font-size: 14px;
+}
+
+.example {
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 70px 20px;
+    border: 1px solid var(--border);
+}
+
+.no-results h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.no-results p {
+    color: var(--muted);
+}
+
+@media (max-width: 700px) {
+
+    .page-header h1 {
+        font-size: 52px;
+    }
+
+    .glossary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .term-card {
+        padding: 22px;
+    }
 }
